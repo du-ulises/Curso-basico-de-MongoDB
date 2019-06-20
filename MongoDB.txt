@@ -1,0 +1,9 @@
+MongoDB es una base de datos open source, NoSQL y basada en documentos que nos permite guardar una gran cantidad información de forma distribuida. Mongo también es el nombre de la compañía que desarrolla el código de esta base de datos. Los drivers de MongoDB son librerías oficiales o desarrolladas por la comunidad que podemos usar para comunicar nuestras aplicaciones con las bases de datos. Una de las más populares es Mongoid, un ORM que convierte nuestros código Ruby en queries que entiende nuestra base de datos.
+
+
+Bases de datos, Colecciones y Documentos en MongoDB
+Las Bases de Datos son los contenedores físicos para nuestras colecciones. Cada base de datos tiene un archivo propio en el sistema de archivos de nuestra computadora o servidor y un Cluster puede tener múltiples bases de datos.
+
+Las Colecciones son agrupaciones de documentos. Son equivalentes a las tablas en bases de datos relacionales pero NO nos imponen un esquema o estructura rígida para guardar información.
+
+Los Documentos son registros dentro de las colecciones. Son la unidad básica de MongoDB y son análogos a los objetos JSON pero en realidad son BSON.
