@@ -1,3 +1,4 @@
+2. Operaciones CRUD
 MongoDB es una base de datos open source, NoSQL y basada en documentos que nos permite guardar una gran cantidad información de forma distribuida. Mongo también es el nombre de la compañía que desarrolla el código de esta base de datos. Los drivers de MongoDB son librerías oficiales o desarrolladas por la comunidad que podemos usar para comunicar nuestras aplicaciones con las bases de datos. Una de las más populares es Mongoid, un ORM que convierte nuestros código Ruby en queries que entiende nuestra base de datos.
 
 
@@ -8,7 +9,7 @@ Las Colecciones son agrupaciones de documentos. Son equivalentes a las tablas en
 
 Los Documentos son registros dentro de las colecciones. Son la unidad básica de MongoDB y son análogos a los objetos JSON pero en realidad son BSON.
 
-2. ESQUEMAS Y RELACIONES 
+3. ESQUEMAS Y RELACIONES 
 Clase 14: Tipos de datos
     Strings: Nos sirven para guardar textos.
     Boolean: Información cierta o falsa (true y false).
@@ -25,3 +26,6 @@ Clase 15: ¿Qué son los esquemas y las relaciones?
 
 Claser 16: Relaciones entre documentos
     Las documentos embebidos nos ayudan a guardar la información en un solo documento y nos ahorra el tiempo que tardamos en consultar diferentes documentos a partir de referencias. Sin embargo, las referencias siguen siendo muy importantes cuando debemos actualizar información en diferentes lugares de forma continua.
+
+4. Profundización de queries dentro de MongoDB
+Operadores para realizar queries y proyecciones
