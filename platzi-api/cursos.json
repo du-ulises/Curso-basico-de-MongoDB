@@ -1,0 +1,18 @@
+{
+    "_id": "",
+    "nombre": "",
+    "descripcion": "",
+    "clases": [{
+            "_id": "",
+            "orden": 1,
+            "nombre": "",
+            "video": ["url1"]
+        },
+        {
+            "_id": "",
+            "orden": 2,
+            "nombre": "",
+            "video": ["url2"]
+        }
+    ]
+}
