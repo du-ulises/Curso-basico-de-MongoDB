@@ -7,3 +7,21 @@ Las Bases de Datos son los contenedores físicos para nuestras colecciones. Cada
 Las Colecciones son agrupaciones de documentos. Son equivalentes a las tablas en bases de datos relacionales pero NO nos imponen un esquema o estructura rígida para guardar información.
 
 Los Documentos son registros dentro de las colecciones. Son la unidad básica de MongoDB y son análogos a los objetos JSON pero en realidad son BSON.
+
+2. ESQUEMAS Y RELACIONES 
+Clase 14: Tipos de datos
+    Strings: Nos sirven para guardar textos.
+    Boolean: Información cierta o falsa (true y false).
+    ObjectId: Utilizan el tiempo exacto en el que generamos la consulta para siempre generan IDs únicos. Existen en BSON pero no en JSON.
+    Date: Nos sirven para guardar fechas y hacer operaciones de rangos entre ellas.
+    Números: Doubles, Integers, Integers 64 bits y Decimals.
+    Documentos Embebidos: Documentos dentro de otros documentos ({}).
+    Arrays: Arreglos o listas de cualquier otro tipo de datos, incluso, de otras listas.
+
+Clase 15: ¿Qué son los esquemas y las relaciones?
+    Los esquemas son la forma en que organizamos nuestros documentos en nuestras colecciones. MongoDB no impone ningún esquema pero podemos seguir buenas prácticas y estructurar nuestros documentos de forma parecida (no igual) para aprovechar la flexibilidad y escalabilidad de la base de datos sin aumentar la complejidad de nuestras aplicaciones.
+
+    Las relaciones son la forma en que nuestras entidades o documentos sen encuentran enlazados unos con otros. Por ejemplo: Una carrera tiene multiples cursos y cada curso tiene multiples clases.
+
+Claser 16: Relaciones entre documentos
+    Las documentos embebidos nos ayudan a guardar la información en un solo documento y nos ahorra el tiempo que tardamos en consultar diferentes documentos a partir de referencias. Sin embargo, las referencias siguen siendo muy importantes cuando debemos actualizar información en diferentes lugares de forma continua.
