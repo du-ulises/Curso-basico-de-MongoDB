@@ -48,11 +48,12 @@ def consultar_carreras(skip, limit):
 
 
 def agregar_curso(json):
-    return str('Falta por implementar')
+    curso = consultar_curso_por_id_proyeccion(json['id_curso'], proyeccion={'nombre': 1})
+    return str(db.carreras.update_one({'_id': ObjectId(json['id_carrera'])}, {'$addToSet': {'cursos': curso}}).modified_count)
 
 
 def borrar_curso_de_carrera(json):
-    return str('Falta por implementar')
+    return str(db.carreras.update_one({'_id': ObjectId(json['id_carrera'])}, {'$pull': {'cursos': {'_id': ObjectId(json['id_curso'])}}}).modified_count)
 
 # -----------------Cursos-------------------------
 
@@ -74,7 +75,7 @@ def borrar_curso_por_id(curso_id):
 
 
 def consultar_curso_por_id_proyeccion(id_curso, proyeccion=None):
-    return str('Falta por implementar')
+    return db.cursos.find_one({'_id': ObjectId(id_curso)}, proyeccion)
 
 
 def consultar_curso_por_nombre(nombre):
