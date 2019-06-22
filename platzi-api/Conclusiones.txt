@@ -1,0 +1,16 @@
+Recomendaciones de Arquitectura y Paso a Producción
+    Usar proveedores cloud con alta disponibilidad: AWS, Google Cloud o Azure son muy buenas opciones
+    No te compliques pensando en administración de servidores con MongoDB, servicios como MongoDB Atlas o mlab son muy buenas opciones
+    Guardar las credenciales en variables de entorno o archivos de configuración fuera del proyecto
+    Asegura que tu cluster se encuentra en la mis región del proveedor que tu aplicación
+    Has VPC peering entre la VPC de tu aplicación y la VPC de tu cluster
+    Cuida la lista de IPs blancas
+    Puedes habilitar la autenticación en dos pasos
+    Actualiza constantemente tu versión de MongoDB
+    Separa los ambientes de desarrollo, test y producción
+    Habilita la opción de almacenamiento encriptado
+
+    Resumen y Conclusiones
+¡Felicitaciones por terminar el Curso MongoDB en Platzi!
+
+Aprendimos qué son, cómo funcionan, qué ventajas tienen y qué tipos de bases de datos NoSQL como MongoDB encontramos en el mercado. Programamos operaciones, agregaciones e índices con buenas prácticas para mejorar el performance y crear una API REST con el CRUD de nuestro proyecto PlatziMongo, usamos la consola, la interfaz gráfica y nuestro lenguaje de programación favorito. Tambien, aprendimos cómo funcionan los drivers y los clusters en la arquitectura de nuestras aplicaciones.
